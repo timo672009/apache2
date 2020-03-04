@@ -8,5 +8,5 @@ RUN apk add --no-cache apache2 && \
         /var/www/localhost/htdocs/index.html
 
 EXPOSE 80
-
+EXPOSE 90
 ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
